@@ -1,4 +1,4 @@
-FROM postgres:9.6-alpine
+FROM postgres:10.3-alpine
 LABEL maintainer="Rodrigo de Avila <rodrigo.avila@mailtop.com.br>"
 
 RUN wget "s3.amazonaws.com/aws-cli/awscli-bundle.zip" -O "awscli-bundle.zip" && \

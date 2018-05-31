@@ -5,8 +5,8 @@
 
 This image creates a database dump, compress it, and send to an S3 bucket.
 
-* Based on `postgres:9.6-alpine`
-* Contains aws-cli v1.11.160
+* Based on `postgres:10.3-alpine`
+* Contains `aws-cli/1.15.30 Python/2.7.14 Linux/4.9.87-linuxkit-aufs botocore/1.10.30`
 
 ## Usage example
 
