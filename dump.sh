@@ -9,7 +9,7 @@ PGPASSWORD="$POSTGRES_PASSWORD" pg_dump -U $POSTGRES_USER \
                                         -d $POSTGRES_DB | bzip2 -c > $FILE
 
 echo "Uploading to $AWS_S3_BUCKET..."
-aws s3 cp $FILE.bz2 $AWS_S3_BUCKET/$FILE.bz2
+aws s3 cp $FILE $AWS_S3_BUCKET/$FILE
 
 echo "Done."
 exit 0
